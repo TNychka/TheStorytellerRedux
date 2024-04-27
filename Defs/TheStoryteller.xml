@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <StorytellerDef ParentName="BaseStoryteller">
+        <defName>TheStorytellerRedux</defName>
+        <label>The Storyteller</label>
+        <description>The Storyteller weaves a continuous story based on the world you make.</description>
+        <portraitLarge>UI/HeroArt/Storytellers/TheStorytellerHeroArt</portraitLarge>
+        <portraitTiny>UI/HeroArt/Storytellers/TheStorytellerHeroArtTiny</portraitTiny>
+        <listOrder>66</listOrder>
+        <comps>
+            <li Class="BST_TheStorytellerRedux.StorytellerCompProperties_TheStorytellerReduxIntro">
+                <allowedTargetTags>
+                    <li>Map_PlayerHome</li>
+                </allowedTargetTags>
+            </li>
+        </comps>
+    </StorytellerDef>
+</Defs>

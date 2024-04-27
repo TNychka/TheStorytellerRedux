@@ -12,13 +12,14 @@
         <AssemblyName>TheStorytellerRedux</AssemblyName>
         <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
+        <LangVersion>latest</LangVersion>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
         <PlatformTarget>AnyCPU</PlatformTarget>
         <DebugSymbols>false</DebugSymbols>
         <DebugType>full</DebugType>
         <Optimize>false</Optimize>
-        <OutputPath>../../Assemblies</OutputPath>
+        <OutputPath>../Assemblies</OutputPath>
         <DefineConstants>DEBUG;TRACE</DefineConstants>
         <ErrorReport>prompt</ErrorReport>
         <WarningLevel>4</WarningLevel>
@@ -27,7 +28,7 @@
         <PlatformTarget>AnyCPU</PlatformTarget>
         <DebugType>pdbonly</DebugType>
         <Optimize>true</Optimize>
-        <OutputPath>../../Assemblies</OutputPath>
+        <OutputPath>../Assemblies</OutputPath>
         <DefineConstants>TRACE</DefineConstants>
         <ErrorReport>prompt</ErrorReport>
         <WarningLevel>4</WarningLevel>
@@ -55,6 +56,10 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Core\StorytellerCompProperties\StorytellerCompProperties_TheStorytellerRedux.cs" />
+        <Compile Include="Core\StorytellerCompProperties\StorytellerCompProperties_TheStorytellerReduxIntro.cs" />
+        <Compile Include="Core\StorytellerComp\StorytellerComp_TheStorytellerRedux.cs" />
+        <Compile Include="Core\StorytellerComp\StorytellerComp_TheStorytellerReduxIntro.cs" />
         <Compile Include="Core\TheStorytellerRedux.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
