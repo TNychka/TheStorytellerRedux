@@ -6,11 +6,8 @@
         <flashInterval>-1</flashInterval>
     </LetterDef>
     <LetterDef ParentName="ChoiceLetterBaseStorytellerTale">
-        <defName>BST_StorytellerIntro</defName>
-        <letterClass>BST_TheStorytellerRedux.ChoiceLetter_StorytellerIntro</letterClass>
-    </LetterDef>
-    <LetterDef ParentName="ChoiceLetterBaseStorytellerTale">
-        <defName>BST_StoryArc</defName>
-        <letterClass>BST_TheStorytellerRedux.ChoiceLetter_StoryArc</letterClass>
+        <defName>BST_LetterAccept</defName>
+        <!--Intentional duplicate class-->
+        <letterClass>BST_TheStorytellerRedux.ChoiceLetter_Accept</letterClass>
     </LetterDef>
 </Defs>

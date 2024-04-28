@@ -1,23 +1,22 @@
-using System;
 using System.Collections.Generic;
 using RimWorld;
 using Verse;
 
 namespace BST_TheStorytellerRedux
 {
-    public class ChoiceLetter_StorytellerIntro : ChoiceLetter
+    public class ChoiceLetter_Accept : ChoiceLetter
     {
-        public string signalAccepted;
-        public string playerFactionName;
-        
+        public string signalAccept = null;
+        public string acceptOptionString = "DefaultLetterAcceptOption".Translate();
+
         public override void ExposeData()
         {
             base.ExposeData();
-            Scribe_Values.Look<string>(ref signalAccepted, "signalAccept");
-            Scribe_Values.Look<string>(ref playerFactionName, "playerFactionName");
+            Scribe_Values.Look(ref signalAccept, "SignalAccept");
         }
+
         public override bool CanDismissWithRightClick => false;
-        
+
         public override bool CanShowInLetterStack
         {
             get
@@ -26,6 +25,7 @@ namespace BST_TheStorytellerRedux
                 {
                     return false;
                 }
+
                 return quest.State is QuestState.Ongoing or QuestState.NotYetAccepted;
             }
         }
@@ -34,27 +34,32 @@ namespace BST_TheStorytellerRedux
         {
             get
             {
-                ChoiceLetter_StorytellerIntro storyIntro = this;
-                if (storyIntro.ArchivedOnly)
+                ChoiceLetter_Accept accept = this;
+                if (accept.ArchivedOnly)
                 {
-                    yield return storyIntro.Option_Close;
+                    yield return accept.Option_Close;
                 }
                 else
                 {
-                    DiaOption optionA = new DiaOption("ChoiceAcceptStorytellerTale".Translate(playerFactionName));
-                    optionA.action = (() =>
+                    DiaOption acceptOption = new DiaOption(acceptOptionString);
+                    acceptOption.action = (() =>
                             {
                                 #if DEBUG
-                                    Log.Message("Storyteller Intro Accepted");
+                                    Log.Message("Letter Accepted, sending signal " + signalAccept);
                                 #endif
                                 Find.LetterStack.RemoveLetter(this);
-                                Find.SignalManager.SendSignal(new Signal(signalAccepted));
+                                Find.SignalManager.SendSignal(new Signal(signalAccept));
                             }
                         );
-                    optionA.resolveTree = true;
-                    yield return optionA;
+                    acceptOption.resolveTree = true;
+                    yield return acceptOption;
                 }
             }
+        }
+
+        public override string ToString()
+        {
+            return base.ToString() + " Signal Accept: " + signalAccept;
         }
     }
 }

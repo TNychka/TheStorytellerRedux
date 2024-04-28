@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <QuestScriptDef>
+        <defName>BST_Quest_Arc_Establishment</defName>
+        <autoAccept>true</autoAccept>
+        <isRootSpecial>true</isRootSpecial>
+        <defaultChallengeRating>2</defaultChallengeRating>
+        <questNameRules>
+            <rulesStrings>
+                <li>questName->Establishing [playerFaction_name]</li>
+            </rulesStrings>
+        </questNameRules>
+        <questDescriptionRules>
+            <rulesStrings>
+                <li>questDescription->Establish [playerFaction_name]</li>
+            </rulesStrings>
+        </questDescriptionRules>
+        <root Class="BST_TheStorytellerRedux.QuestNode_Arc_Establishment">
+            <rootNodes>
+                <li Class="QuestNode_QuestUnique">
+                    <tag>BST_StorytellerTale_Arc</tag>
+                </li>
+                <li Class="QuestNode_GetPlayerFaction">
+                    <storeAs>playerFaction</storeAs>
+                </li>
+            </rootNodes>
+            <letterLabel>EstablishmentArcLetterLabel</letterLabel>
+            <letterTitle>EstablishmentArcLetterTitle</letterTitle>
+            <letterText>EstablishmentArcLetterText</letterText>
+        </root>
+    </QuestScriptDef>
+</Defs>

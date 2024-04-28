@@ -1,9 +1,29 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
-    <ChoiceAcceptStorytellerTale>Begin the story of the {0}.</ChoiceAcceptStorytellerTale>
-    <LetterTextTheStoryBegins>The Story Begins.\nAs the colonists gather themselves and begin to organize, their need is to survive the harsh world and establish a colony. \n So begins the the first Arc of the {0}.</LetterTextTheStoryBegins>
     
     <DefaultColonyName>New Arrivals DEFAULT</DefaultColonyName>
+
+
+    <DefaultArcLabel>Default Label</DefaultArcLabel>
+    <DefaultArcTitle>Default Title</DefaultArcTitle>
+    <DefaultArcText>Default Text</DefaultArcText>
+
+    <DefaultLetterLabel>Default Letter Label</DefaultLetterLabel>
+    <DefaultLetterTitle>Default Letter Title</DefaultLetterTitle>
+    <DefaultLetterText>Default Letter Text</DefaultLetterText>
+    <DefaultLetterAcceptOption>Accept.</DefaultLetterAcceptOption>
     
-    <LetterLabelTheStoryBegins>The Story Begins</LetterLabelTheStoryBegins>
+    <EstablishmentArcLetterLabel>Establishment Letter Label</EstablishmentArcLetterLabel>
+    <EstablishmentArcLetterTitle>Establishment Letter Title</EstablishmentArcLetterTitle>
+    <EstablishmentArcLetterText>Establishment Letter Text</EstablishmentArcLetterText>
+    
+    <IntroLetterLabel>The Story Begins</IntroLetterLabel>
+    <IntroLetterTitle>The Story Begins</IntroLetterTitle>
+    <IntroLetterText>The Story Begins.\nAs the colonists gather themselves and begin to organize, their need is to survive the harsh world and establish a colony. \n So begins the the first Arc of the {0}.</IntroLetterText>
+    <IntroLetterAcceptOption>Begin the story of the {0}.</IntroLetterAcceptOption>
+
+    <IntroCompleteLetterLabel>The Story Continues</IntroCompleteLetterLabel>
+    <IntroCompleteLetterTitle>The Story Continues</IntroCompleteLetterTitle>
+    <IntroCompleteLetterText>The intro has been completed</IntroCompleteLetterText>
+    <IntroCompleteLetterAcceptOption>Accept.</IntroCompleteLetterAcceptOption>
 </LanguageData>

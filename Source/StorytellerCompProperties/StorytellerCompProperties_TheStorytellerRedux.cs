@@ -6,7 +6,7 @@ namespace BST_TheStorytellerRedux
 {
     public class StorytellerCompProperties_TheStorytellerRedux : StorytellerCompProperties
     {
-        public int IntervalsToStoryStart = 0;
+        public int intervalsToStoryStart = 0;
         public StorytellerCompProperties_TheStorytellerRedux()
         {
             compClass = typeof (StorytellerComp_TheStorytellerRedux);
@@ -15,7 +15,7 @@ namespace BST_TheStorytellerRedux
         public override string ToString()
         {
             return base.ToString() 
-                + "\nIntervalsToStoryStart " + IntervalsToStoryStart;
+                + "\nIntervalsToStoryStart " + intervalsToStoryStart;
         }
     }
 }

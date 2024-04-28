@@ -18,7 +18,7 @@ namespace BST_TheStorytellerRedux
         public override IEnumerable<FiringIncident> MakeIntervalIncidents(IIncidentTarget target)
         {
             StorytellerComp_TheStorytellerRedux source = this;
-            if (source.IntervalsPassed ==  Props.IntervalsToStoryStart) // TODO bump up this interval
+            if (source.IntervalsPassed ==  Props.intervalsToStoryStart) // TODO bump up this interval
             {
                 IncidentDef storytellerIntro = BSTIncidentDefOf.BST_GiveQuest_TheStorytellersTale;
 #if DEBUG

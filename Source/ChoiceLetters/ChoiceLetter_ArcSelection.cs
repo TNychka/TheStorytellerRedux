@@ -4,7 +4,7 @@ using Verse;
 
 namespace BST_TheStorytellerRedux
 {
-    public class ChoiceLetter_StoryArc : ChoiceLetter
+    public class ChoiceLetter_ArcSelection : ChoiceLetter
     {
         public string signalOptionA;
         public string signalOptionB;
@@ -37,10 +37,10 @@ namespace BST_TheStorytellerRedux
         {
             get
             {
-                ChoiceLetter_StoryArc storyArc = this;
-                if (storyArc.ArchivedOnly)
+                ChoiceLetter_ArcSelection accept = this;
+                if (accept.ArchivedOnly)
                 {
-                    yield return storyArc.Option_Close;
+                    yield return accept.Option_Close;
                 }
                 else
                 {
@@ -77,7 +77,7 @@ namespace BST_TheStorytellerRedux
                     yield return optionA;
                     yield return optionB;
                     yield return optionC;
-                    yield return storyArc.Option_Postpone;
+                    yield return accept.Option_Postpone;
                 }
             }
         }

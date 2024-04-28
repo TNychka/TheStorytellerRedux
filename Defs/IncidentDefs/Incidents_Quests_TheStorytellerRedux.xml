@@ -8,7 +8,7 @@
             <li>Map_PlayerHome</li>
         </targetTags>
         <workerClass>IncidentWorker_GiveQuest</workerClass>
-        <questScriptDef>BST_TheStorytellersTale</questScriptDef>
+        <questScriptDef>BST_Quest_TheStorytellerReduxIntro</questScriptDef>
         <baseChance>0</baseChance>
     </IncidentDef>
 </Defs>

@@ -12,7 +12,7 @@
                 <allowedTargetTags>
                     <li>Map_PlayerHome</li>
                 </allowedTargetTags>
-                <aTestNumber>10.0</aTestNumber>
+                <intervalsToStoryStart>2</intervalsToStoryStart>
             </li>
         </comps>
     </StorytellerDef>

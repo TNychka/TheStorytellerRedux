@@ -6,8 +6,7 @@ namespace BST_TheStorytellerRedux
     [DefOf]
     public static class BSTChoiceLetterDefOf
     {
-        public static LetterDef BST_StorytellerIntro;
-        public static LetterDef BST_StoryArc;
+        public static LetterDef BST_LetterAccept;
     }
     
     [DefOf]

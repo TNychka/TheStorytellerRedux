@@ -56,19 +56,18 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="ChoiceLetters\ChoiceLetter_StoryArc.cs" />
-        <Compile Include="ChoiceLetters\ChoiceLetter_TheStorytellerIntro.cs" />
+        <Compile Include="ChoiceLetters\ChoiceLetter_Accept.cs" />
+        <Compile Include="ChoiceLetters\ChoiceLetter_ArcSelection.cs" />
         <Compile Include="DefNamespaces\DefsStorytellerRedux.cs" />
-        <Compile Include="Quests\Arcs\QuestNode_Arc_Establishment_TheStorytellerRedux.cs" />
-        <Compile Include="Quests\Arcs\QuestNode_Arc_Survival_TheStorytellerRedux.cs" />
-        <Compile Include="Quests\Arcs\QuestNode_Arc_TheStorytellerRedux.cs" />
-        <Compile Include="Quests\QuestNode_Root_TheStorytellerRedux.cs" />
+        <Compile Include="Quests\Arcs\QuestNode_Arc_Establishment.cs" />
+        <Compile Include="Quests\Arcs\QuestNode_Arc_Root.cs" />
+        <Compile Include="Quests\Parts\QuestPart_ArcGenerator.cs" />
+        <Compile Include="Quests\Parts\QuestPart_NameFaction.cs" />
+        <Compile Include="Quests\Parts\QuestPart_SendLetter.cs" />
+        <Compile Include="Quests\QuestNode_Root_TheStorytellerReduxIntro.cs" />
         <Compile Include="StorytellerCompProperties\StorytellerCompProperties_TheStorytellerRedux.cs" />
         <Compile Include="StorytellerComp\StorytellerComp_TheStorytellerRedux.cs" />
         <Compile Include="TheStorytellerRedux.cs" />
-    </ItemGroup>
-    <ItemGroup>
-      <Folder Include="Quests\Parts\" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
