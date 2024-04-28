@@ -4,7 +4,7 @@
             Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')"/>
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCSignal PU</Platform>
         <ProjectGuid>{56428A4F-22C3-4E04-AB25-A05624BA959B}</ProjectGuid>
         <OutputType>Library</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -56,11 +56,19 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Core\StorytellerCompProperties\StorytellerCompProperties_TheStorytellerRedux.cs" />
-        <Compile Include="Core\StorytellerCompProperties\StorytellerCompProperties_TheStorytellerReduxIntro.cs" />
-        <Compile Include="Core\StorytellerComp\StorytellerComp_TheStorytellerRedux.cs" />
-        <Compile Include="Core\StorytellerComp\StorytellerComp_TheStorytellerReduxIntro.cs" />
-        <Compile Include="Core\TheStorytellerRedux.cs" />
+        <Compile Include="ChoiceLetters\ChoiceLetter_StoryArc.cs" />
+        <Compile Include="ChoiceLetters\ChoiceLetter_TheStorytellerIntro.cs" />
+        <Compile Include="DefNamespaces\DefsStorytellerRedux.cs" />
+        <Compile Include="Quests\Arcs\QuestNode_Arc_Establishment_TheStorytellerRedux.cs" />
+        <Compile Include="Quests\Arcs\QuestNode_Arc_Survival_TheStorytellerRedux.cs" />
+        <Compile Include="Quests\Arcs\QuestNode_Arc_TheStorytellerRedux.cs" />
+        <Compile Include="Quests\QuestNode_Root_TheStorytellerRedux.cs" />
+        <Compile Include="StorytellerCompProperties\StorytellerCompProperties_TheStorytellerRedux.cs" />
+        <Compile Include="StorytellerComp\StorytellerComp_TheStorytellerRedux.cs" />
+        <Compile Include="TheStorytellerRedux.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Quests\Parts\" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <QuestScriptDef>
+        <defName>BST_TheStorytellersTale</defName>
+        <autoAccept>true</autoAccept>
+        <defaultHidden>true</defaultHidden>
+        <isRootSpecial>true</isRootSpecial>
+        <defaultChallengeRating>5</defaultChallengeRating>
+        <questNameRules>
+            <rulesStrings>
+                <li>questName->The Tale of [playerFaction_name]</li>
+            </rulesStrings>
+        </questNameRules>
+        <questDescriptionRules>
+            <rulesStrings>
+                <li>questDescription->The Tale of [playerFaction_name] begins on this RimWorld. Danger awaits on this rimworld, and the struggle to survive is fraught with peril. How will [playerFaction_name]'s story be written? In the stars? Or in blood?</li>
+            </rulesStrings>
+        </questDescriptionRules>
+        <root Class="BST_TheStorytellerRedux.QuestNode_Root_TheStorytellersTale">
+            <rootNodes>
+                <li Class="QuestNode_QuestUnique">
+                    <tag>BSTStorytellerTale</tag>
+                </li>
+                <li Class="QuestNode_GetPlayerFaction">
+                    <storeAs>playerFaction</storeAs>
+                </li>
+            </rootNodes>
+            <introNode>
+                <li Class="BST_TheStorytellerRedux.QuestPart_Arc_Establishment_TheStorytellerRedux">
+                </li>
+            </introNode>
+            <arcNodes>
+               <li Class="BST_TheStorytellerRedux.QuestPart_Arc_Survival_TheStorytellerRedux">
+               </li>
+            </arcNodes>
+        </root>
+    </QuestScriptDef>
+</Defs>

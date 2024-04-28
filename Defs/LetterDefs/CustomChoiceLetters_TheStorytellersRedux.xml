@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <LetterDef Abstract="True" Name="ChoiceLetterBaseStorytellerTale">
+        <letterClass>ChoiceLetter</letterClass>
+        <color>(96, 245, 190)</color>
+        <flashInterval>-1</flashInterval>
+    </LetterDef>
+    <LetterDef ParentName="ChoiceLetterBaseStorytellerTale">
+        <defName>BST_StorytellerIntro</defName>
+        <letterClass>BST_TheStorytellerRedux.ChoiceLetter_StorytellerIntro</letterClass>
+    </LetterDef>
+    <LetterDef ParentName="ChoiceLetterBaseStorytellerTale">
+        <defName>BST_StoryArc</defName>
+        <letterClass>BST_TheStorytellerRedux.ChoiceLetter_StoryArc</letterClass>
+    </LetterDef>
+</Defs>

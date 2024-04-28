@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <IncidentCategoryDef>
+        <defName>BST_StorytellerTale</defName>
+        <needsParmsPoints>false</needsParmsPoints>
+    </IncidentCategoryDef>
+</Defs>
+
+

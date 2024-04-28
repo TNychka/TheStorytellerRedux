@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <IncidentDef>
+        <defName>BST_GiveQuest_TheStorytellersTale</defName>
+        <label>The Storyteller's Tale</label>
+        <category>BST_StorytellerTale</category>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>IncidentWorker_GiveQuest</workerClass>
+        <questScriptDef>BST_TheStorytellersTale</questScriptDef>
+        <baseChance>0</baseChance>
+    </IncidentDef>
+</Defs>

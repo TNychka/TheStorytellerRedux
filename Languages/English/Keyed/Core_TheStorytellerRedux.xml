@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <ChoiceAcceptStorytellerTale>Begin the story of the {0}.</ChoiceAcceptStorytellerTale>
+    <LetterTextTheStoryBegins>The Story Begins.\nAs the colonists gather themselves and begin to organize, their need is to survive the harsh world and establish a colony. \n So begins the the first Arc of the {0}.</LetterTextTheStoryBegins>
+    
+    <DefaultColonyName>New Arrivals DEFAULT</DefaultColonyName>
+    
+    <LetterLabelTheStoryBegins>The Story Begins</LetterLabelTheStoryBegins>
+</LanguageData>

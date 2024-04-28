@@ -3,3 +3,5 @@
 **/bin/**
 **/obj/**
 Source/TheStorytellerRedux.sln.DotSettings.user
+
+*.pdb

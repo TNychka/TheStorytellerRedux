@@ -21,8 +21,11 @@ namespace BST_TheStorytellerRedux
 
         public TheStorytellerRedux(ModContentPack content) : base(content)
         {
-            this._settings = GetSettings<TheStorytellerReduxSettings>();
-            Log.Message("Loading the storyteller redux");
+            _settings = GetSettings<TheStorytellerReduxSettings>();
+            
+            #if DEBUG
+                Log.Message("Core storyteller redux start");
+            #endif
         }
         
         public override void DoSettingsWindowContents(Rect inRect)

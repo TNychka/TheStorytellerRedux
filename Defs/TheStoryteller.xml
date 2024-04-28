@@ -8,10 +8,11 @@
         <portraitTiny>UI/HeroArt/Storytellers/TheStorytellerHeroArtTiny</portraitTiny>
         <listOrder>66</listOrder>
         <comps>
-            <li Class="BST_TheStorytellerRedux.StorytellerCompProperties_TheStorytellerReduxIntro">
+            <li Class="BST_TheStorytellerRedux.StorytellerCompProperties_TheStorytellerRedux">
                 <allowedTargetTags>
                     <li>Map_PlayerHome</li>
                 </allowedTargetTags>
+                <aTestNumber>10.0</aTestNumber>
             </li>
         </comps>
     </StorytellerDef>
